@@ -1,0 +1,131 @@
+[
+  {
+    "kind": "text",
+    "title": "Experienced",
+    "data": "With over 10 years of software development experience, I have developed the apps in Windows, iOS and web. Such backend development skills as MySQL and REST API were also gained for the business requirements."
+  },
+  {
+    "kind": "text",
+    "title": "Sharer",
+    "data": "Passionate about the new technologies, I occasionally present them to the team. Besides, coaching the new hires is part of my duties."
+  },
+  {
+    "kind": "text",
+    "title": "Client-oriented",
+    "data": "To meet the changing customer needs, I strive for on time delivery and promptly resolving the reported issues."
+  },
+  {
+    "kind": "timeline",
+    "title": "Journey",
+    "data": [
+      {
+        "started": "2010-09",
+        "ended": "2014-02",
+        "position": "Windows App Developer",
+        "company": "CyberLink",
+        "companyLink": "https://www.cyberlink.com/"
+      },
+      {
+        "started": "2014-03",
+        "ended": "2015-10",
+        "position": "iOS App Developer",
+        "company": "Chicony",
+        "companyLink": "https://www.chicony.com/chicony/en"
+      },
+      {
+        "started": "2016-03",
+        "ended": "present",
+        "position": "Full Stack Developer",
+        "company": "PERFECT",
+        "companyLink": "https://www.perfectcorp.com/business"
+      },
+      {
+        "started": "2008-09",
+        "ended": "2010-08",
+        "position": "Master of Computer Science and Information Engineering",
+        "company": "National Central University",
+        "companyLink": "https://www.csie.ncu.edu.tw/"
+      }
+    ]
+  },
+  {
+    "kind": "skills",
+    "title": "Skills",
+    "data": [
+      {
+        "category": "Programming Languages",
+        "itemSet": [
+          "Python",
+          "JavaScript",
+          "SQL",
+          "C++"
+        ]
+      },
+      {
+        "category": "Tools",
+        "itemSet": [
+          "React",
+          "Git",
+          "Docker",
+          "Apache Spark",
+          "Selenium",
+          "Pyramid web framework"
+        ]
+      },
+      {
+        "category": "Languages",
+        "itemSet": [
+          {
+            "name": "Traditional Chinese",
+            "note": "Native language"
+          },
+          {
+            "name": "English",
+            "note": "Score of TOEIC: 720 (taken in 2006)"
+          }
+        ]
+      },
+      {
+        "category": "Being Learned",
+        "itemSet": [
+          "Rust"
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "slideshow",
+    "title": "Portfolio",
+    "data": [
+      {
+        "link": "https://m.bobbibrowncosmetics.com/products/2326/makeup/eyes#eye-looks",
+        "imgSrcs": [
+          "bb-look-finder-try-on.png",
+          "bb-look-finder-how-to.png"
+        ],
+        "caption": "Bobbi Brown Virtual Look Finder"
+      },
+      {
+        "link": "https://www.perfectcorp.com/business/showcase/live-shows",
+        "imgSrcs": [
+          "live-show.png",
+          "live-show-try-on.png"
+        ],
+        "caption": "Web SDK for Viewing the Live Shows"
+      },
+      {
+        "link": "https://www.benefitcosmetics.com/en-us/brows",
+        "imgSrcs": [
+          "benefit-try-on.png",
+          "mobile-benefit-try-on.png"
+        ],
+        "caption": "Virtual Try-on SDK for Benefit Cosmetics"
+      },
+      {
+        "link": "https://challenge2019.perfectcorp.com/",
+        "imgSrcs": ["pf-challenge.png"],
+        "caption": "Perfect Half Million Beauty Product Image Recognition Challenge"
+      }
+    ]
+  }
+]
