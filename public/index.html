@@ -29,6 +29,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,400&display=swap" rel="stylesheet">
 
+    <% if (process.env.REACT_APP_DEPLOY_URL) { %>
+      <meta property="og:url" content="%REACT_APP_DEPLOY_URL%">
+      <meta property="og:title" content="Anders">
+      <meta property="og:description" content="Anders Portfolio">
+      <meta property="og:image" content="%REACT_APP_DEPLOY_URL%/portrait.jpg">
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Anders">
+      <meta name="twitter:description" content="Anders Portfolio">
+      <meta name="twitter:image" content="%REACT_APP_DEPLOY_URL%/portrait.jpg">
+    <% } %>
+
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
