@@ -28,7 +28,7 @@ function Hero () {
   return (
     <div style={heroStyle}>
       <div style={styles.heroText}>
-        <span style={styles.heroTitle}>Anders</span>
+        <span style={styles.heroTitle}>{process.env.REACT_APP_MY_NAME}</span>
         <span style={styles.heroSubtitle}># Journey of a Coding Artist</span>
       </div>
       <div style={codeViewportStyle} ref={codeViewportRef}>

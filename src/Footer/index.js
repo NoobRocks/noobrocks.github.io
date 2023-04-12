@@ -15,7 +15,7 @@ function Footer() {
     <>
       <div style={styles.footerPlaceholder}/>
       <div style={styles.footer}>
-        <div>&copy;&#32;2023&#32;Anders</div>
+        <div>{`© 2023 ${process.env.REACT_APP_MY_NAME}`}</div>
         {socialLinks.map(linkInfo => (
           <a key={`socialLink${linkInfo.kind}`} target="_blank" href={linkInfo.link} rel="noreferrer" style={styles.socialLink}>
             {linkInfo.image ?
