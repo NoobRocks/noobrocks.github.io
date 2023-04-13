@@ -18,10 +18,10 @@ const computableDate = dateString => {
 const getTimelineItemDuration = months => {
   const years = Math.floor(months / 12);
   const remainingMonths = months % 12;
-  const unitArray = ["years", "months"];
+  const unitArray = [["year", "years"], ["month", "months"]];
   return [years, remainingMonths].map((v, i) => {
     if (v > 0) {
-      return `${v} ${unitArray[i]}`;
+      return `${v} ${unitArray[i][v > 1 ? 1 : 0]}`;
     }
     return "";
   }).filter(v => !!v).join(" ");
