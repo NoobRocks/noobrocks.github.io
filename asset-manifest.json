@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.47c4052a.css",
-    "main.js": "./static/js/main.e34a7c6b.js",
-    "static/js/485.68a80606.chunk.js": "./static/js/485.68a80606.chunk.js",
+    "main.js": "./static/js/main.f75b1d62.js",
+    "static/js/485.dc5dce69.chunk.js": "./static/js/485.dc5dce69.chunk.js",
     "static/js/787.f429b844.chunk.js": "./static/js/787.f429b844.chunk.js",
     "static/js/255.3cd398f6.chunk.js": "./static/js/255.3cd398f6.chunk.js",
     "static/media/live-show-try-on.png": "./static/media/live-show-try-on.0fb5a754eb0bd9249fea.png",
@@ -15,13 +15,13 @@
     "static/media/pf-challenge.png": "./static/media/pf-challenge.cb12e3c87211eb050549.png",
     "index.html": "./index.html",
     "main.47c4052a.css.map": "./static/css/main.47c4052a.css.map",
-    "main.e34a7c6b.js.map": "./static/js/main.e34a7c6b.js.map",
-    "485.68a80606.chunk.js.map": "./static/js/485.68a80606.chunk.js.map",
+    "main.f75b1d62.js.map": "./static/js/main.f75b1d62.js.map",
+    "485.dc5dce69.chunk.js.map": "./static/js/485.dc5dce69.chunk.js.map",
     "787.f429b844.chunk.js.map": "./static/js/787.f429b844.chunk.js.map",
     "255.3cd398f6.chunk.js.map": "./static/js/255.3cd398f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47c4052a.css",
-    "static/js/main.e34a7c6b.js"
+    "static/js/main.f75b1d62.js"
   ]
 }
