@@ -1,14 +1,13 @@
 const styles = {
   listView: {
     maxWidth: "100%",
-    overflow: "auto hidden",
+    overflow: "hidden",
   },
 
   innerListView: {
     display: "flex",
     alignItems: "center",
     width: "max-content",
-    transition: "transform .8s",
   },
 
   innerListViewMargin: {

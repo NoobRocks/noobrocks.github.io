@@ -3,16 +3,26 @@ import _clamp from "lodash/clamp";
 
 import styles from "./styles.js";
 
+const ITEM_MOVE_MS = 300;
+
 class ListView extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrollLeft: 0,
+      animatedScroll: false
+    };
+  }
+
   onClick = (...args) => {
     this.props.onClick && this.props.onClick(...args);
   };
 
-  makeItemVisible = (scrollAlways = true) => {
+  makeItemVisible = (scrollAlways = true, animatedScroll = false) => {
     if (!this.listView || this.innerListView.scrollWidth <= this.listView.offsetWidth) {
       return;
     }
-    const {itemList, itemId, itemIdProperty, listViewMargin} = this.props;
+    const {itemList, itemId, itemIdProperty} = this.props;
     if (!itemId) {
       return;
     }
@@ -25,8 +35,12 @@ class ListView extends React.PureComponent {
     if (!scrollAlways && itemRect.left >= containerRect.left && itemRect.right <= containerRect.right) {
       return;
     }
-    const translateX = Math.floor((containerRect.width - itemRect.width) / 2) - (listViewMargin || 0) - itemRect.width * itemIndex;
-    this.innerListView.style.transform = `translateX(${_clamp(translateX, -this.innerListView.scrollWidth + this.listView.offsetWidth, 0)}px)`;
+    const translateX = this.state.scrollLeft - (itemRect.left - containerRect.left) + Math.floor((containerRect.width - itemRect.width) / 2);
+    const clampedTranslateX = _clamp(translateX, -(this.innerListView.scrollWidth - this.listView.offsetWidth), 0);
+    this.setState({
+      scrollLeft: clampedTranslateX,
+      animatedScroll
+    });
   };
 
   componentDidMount() {
@@ -34,18 +48,24 @@ class ListView extends React.PureComponent {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.itemList !== this.props.itemList ||
-        prevProps.itemId !== this.props.itemId ||
-        prevProps.listViewMargin !== this.props.listViewMargin) {
-      this.makeItemVisible();
+    const itemListChanged = prevProps.itemList !== this.props.itemList;
+    const itemIdChanged = prevProps.itemId !== this.props.itemId;
+    const listViewMarginChanged = prevProps.listViewMargin !== this.props.listViewMargin;
+    if (itemListChanged || itemIdChanged || listViewMarginChanged) {
+      this.makeItemVisible(true, itemIdChanged && !itemListChanged && !listViewMarginChanged);
     }
   }
 
   render() {
     const {itemList, itemId, renderer, itemIdProperty, listViewStyle, innerListViewStyle, listViewMargin = 0} = this.props;
+    const {scrollLeft, animatedScroll} = this.state;
+    const innerListViewScrollStyle = {
+      transition: animatedScroll ? `transform ${ITEM_MOVE_MS}ms` : "none",
+      transform: `translateX(${scrollLeft}px)`
+    };
     return (
       <div style={{...styles.listView, ...listViewStyle}} ref={r => this.listView = r}>
-        <div style={{...styles.innerListView, ...innerListViewStyle}} ref={r => this.innerListView = r}>
+        <div style={{...styles.innerListView, ...innerListViewStyle, ...innerListViewScrollStyle}} ref={r => this.innerListView = r}>
           <div style={{...styles.innerListViewMargin, width: listViewMargin + "px"}}/>
           {itemList.map((item, i) => {
             const isSelected = item[itemIdProperty] === itemId;
