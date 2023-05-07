@@ -25,6 +25,10 @@ const styles = {
     marginBottom: "1.2rem",
     color: colors.module,
   },
+
+  textItem: {
+    whiteSpace: "pre-wrap",
+  },
 };
 
 export default styles;

@@ -17,7 +17,7 @@ function Card(props) {
 
 export const renderCardItem = (item) => {
   if (item.kind === "text") {
-    return item.data;
+    return <div style={{...styles.textItem, ...item.style}}>{item.data}</div>;
   }
   if (item.kind === "timeline") {
     return <Timeline items={item.data}/>;

@@ -1,13 +1,22 @@
 [
   {
     "kind": "text",
-    "title": "Experienced",
-    "data": "With over 10 years of software development experience, I have developed the apps in Windows, iOS and web. Such backend development skills as MySQL and REST API were also gained for the business requirements."
+    "title": "",
+    "data": "With over 10 years of software development experience, I have developed the apps in Windows, iOS and web. Such backend development skills as MySQL and REST API were also gained for the business requirements.",
+    "style": {
+      "fontSize": "1.5rem",
+      "fontStyle": "italic"
+    }
   },
   {
     "kind": "text",
-    "title": "Sharer",
-    "data": "Passionate about the new technologies, I occasionally present them to the team. Besides, coaching the new hires is part of my duties."
+    "title": "Team Player",
+    "data": "Passionate about the new technologies, I occasionally present them to the team. Besides, coaching the new hires is part of my duties.\nWith empathetic listening and patience, I have obtained a full score in 4 successive cross department reviews."
+  },
+  {
+    "kind": "text",
+    "title": "Efficiency",
+    "data": "By developing tools tailored to my workflow, I avoid somewhat time-consuming and error-prone routines. For instance, filling the bug report."
   },
   {
     "kind": "text",
