@@ -1,10 +1,10 @@
 const styles = {
-  about: {
-    width: "100%",
-    padding: "0 5% 7% 5%",
+  foreword: {
+    fontSize: "1.4rem",
+    fontStyle: "italic",
     boxSizing: "border-box",
+    paddingTop: "1em",
     display: "flex",
-    flexDirection: "column",
     alignItems: "center",
   },
 };

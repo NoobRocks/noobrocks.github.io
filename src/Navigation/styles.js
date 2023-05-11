@@ -1,5 +1,7 @@
 import colors from "../colors";
 
+export const NAVIGATION_HEIGHT = 70;
+
 const link = {
   height: "100%",
   padding: "10px 1.5rem",
@@ -18,7 +20,7 @@ const link = {
 const styles = {
   navigation: {
     width: "100%",
-    height: "70px",
+    height: `${NAVIGATION_HEIGHT}px`,
     padding: "0 5%",
     boxSizing: "border-box",
     backgroundColor: "rgb(20, 20, 20)",
@@ -36,7 +38,7 @@ const styles = {
 
   placeholder: {
     width: "100%",
-    height: "70px",
+    height: `${NAVIGATION_HEIGHT}px`,
   },
 
   linkMargin: {

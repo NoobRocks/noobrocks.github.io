@@ -1,8 +1,17 @@
 import {useState, useEffect} from "react";
 
+const getRectObject = domRect => {
+  return ["width", "height", "x", "y"].reduce((v1, v2) => {
+    v1[v2] = domRect[v2];
+    return v1;
+  }, {});
+};
+
+const nullRect = {width: 0, height: 0, x: 0, y: 0};
+
 export const useElementSize = () => {
   const [ref, setRef] = useState(null);
-  const [elementSize, setElementSize] = useState({width: 0, height: 0});
+  const [elementRect, setElementRect] = useState(nullRect);
 
   useEffect(() => {
     if (!ref) {
@@ -10,8 +19,8 @@ export const useElementSize = () => {
     }
     
     const onResize = () => {
-      const elementRect = ref.getBoundingClientRect();
-      setElementSize({width: elementRect.width, height: elementRect.height});
+      const clientRect = ref.getBoundingClientRect();
+      setElementRect(getRectObject(clientRect));
     };
 
     window.addEventListener("resize", onResize);
@@ -20,11 +29,12 @@ export const useElementSize = () => {
 
   useEffect(() => {
     if (!ref) {
+      setElementRect(nullRect);
       return;
     }
-    const elementRect = ref.getBoundingClientRect();
-    setElementSize({width: elementRect.width, height: elementRect.height});
+    const clientRect = ref.getBoundingClientRect();
+    setElementRect(getRectObject(clientRect));
   }, [ref]);
 
-  return [setRef, elementSize];
+  return [setRef, elementRect, ref];
 };
