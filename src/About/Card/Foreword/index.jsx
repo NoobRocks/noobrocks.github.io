@@ -7,7 +7,9 @@ function Foreword(props) {
   const headerHeight = useContext(HeaderHeightContext);
   
   return (
-    <div style={{...styles.foreword, minHeight: `calc(100vh - ${headerHeight}px)`}}>{props.children}</div>
+    <div style={{...styles.foreword, minHeight: `calc(100vh - ${headerHeight || 0}px)`, visibility: headerHeight ? "inherit" : "hidden"}}>
+      {props.children}
+    </div>
   );
 }
 

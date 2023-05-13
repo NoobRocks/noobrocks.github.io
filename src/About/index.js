@@ -14,7 +14,7 @@ function About() {
   return (
     <>
       <Hero onHeroHeight={setHeroHeight}/>
-      <HeaderHeightContext.Provider value={NAVIGATION_HEIGHT + heroHeight}>
+      <HeaderHeightContext.Provider value={heroHeight > 0 ? NAVIGATION_HEIGHT + heroHeight : 0}>
         <div style={styles.about}>
           {aboutItems.map((item, i) => (
             <Card key={`aboutItemCard${i}`} title={item.title} last={i === aboutItems.length - 1}>
