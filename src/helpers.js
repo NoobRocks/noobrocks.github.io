@@ -38,3 +38,33 @@ export const useElementSize = () => {
 
   return [setRef, elementRect, ref];
 };
+
+const getWindowSizeRect = () => ({width: window.innerWidth, height: window.innerHeight});
+
+export const useWindowSize = (orientationOnly = false) => {
+  const [windowSize, setWindowSize] = useState({width: 0, height: 0});
+
+  useEffect(() => {
+    const onResizeAlways = () => {
+      setWindowSize(getWindowSizeRect());
+    };
+    const onResizeOrientationOnly = () => {
+      const newWindowSize = getWindowSizeRect();
+      const newIsLandscape = newWindowSize.width >= newWindowSize.height;
+      const isLandscape = windowSize.width >= windowSize.height;
+      newIsLandscape !== isLandscape && setWindowSize(newWindowSize);
+    };
+    const onResize = orientationOnly ? onResizeOrientationOnly : onResizeAlways;
+
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, [orientationOnly, windowSize.width, windowSize.height]);
+
+  useEffect(() => {
+    setWindowSize(getWindowSizeRect());
+  }, []);
+
+  return windowSize;
+};
