@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "./static/css/main.47c4052a.css",
-    "main.js": "./static/js/main.2bbe6e94.js",
-    "static/js/568.caf0b116.chunk.js": "./static/js/568.caf0b116.chunk.js",
+    "main.js": "./static/js/main.71cb5581.js",
+    "static/js/568.a266b94e.chunk.js": "./static/js/568.a266b94e.chunk.js",
     "static/js/787.f429b844.chunk.js": "./static/js/787.f429b844.chunk.js",
     "static/js/903.2575b818.chunk.js": "./static/js/903.2575b818.chunk.js",
+    "static/media/mac-tutorial-look-selection.png": "./static/media/mac-tutorial-look-selection.523e5f5b474afd226cf8.png",
     "static/media/live-show-try-on.png": "./static/media/live-show-try-on.0fb5a754eb0bd9249fea.png",
     "static/media/live-show.png": "./static/media/live-show.fbdb7cb0c586904d9d24.png",
+    "static/media/mac-tutorial-makeup.png": "./static/media/mac-tutorial-makeup.130e31260631f722e25c.png",
     "static/media/mobile-benefit-try-on.png": "./static/media/mobile-benefit-try-on.7158115ff6fff686a591.png",
-    "static/media/bb-look-finder-try-on.png": "./static/media/bb-look-finder-try-on.ff61bfda1d200d635d99.png",
     "static/media/benefit-try-on.png": "./static/media/benefit-try-on.01f5d7684f06c2748d3f.png",
     "static/media/code.jpg": "./static/media/code.ef231b2b0ef35e8cbeae.jpg",
-    "static/media/bb-look-finder-how-to.png": "./static/media/bb-look-finder-how-to.410f271458bf6c42962d.png",
     "static/media/pf-challenge.png": "./static/media/pf-challenge.cb12e3c87211eb050549.png",
     "index.html": "./index.html",
     "main.47c4052a.css.map": "./static/css/main.47c4052a.css.map",
-    "main.2bbe6e94.js.map": "./static/js/main.2bbe6e94.js.map",
-    "568.caf0b116.chunk.js.map": "./static/js/568.caf0b116.chunk.js.map",
+    "main.71cb5581.js.map": "./static/js/main.71cb5581.js.map",
+    "568.a266b94e.chunk.js.map": "./static/js/568.a266b94e.chunk.js.map",
     "787.f429b844.chunk.js.map": "./static/js/787.f429b844.chunk.js.map",
     "903.2575b818.chunk.js.map": "./static/js/903.2575b818.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47c4052a.css",
-    "static/js/main.2bbe6e94.js"
+    "static/js/main.71cb5581.js"
   ]
 }
