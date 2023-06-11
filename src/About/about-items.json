@@ -2,7 +2,7 @@
   {
     "kind": "foreword",
     "title": "",
-    "data": "With over 10 years of software development experience, I have developed the apps in Windows, iOS and web. Such backend development skills as MySQL and REST API were also gained for the business requirements."
+    "data": "With over 10 years of software development experience, I have developed apps in Windows, iOS and web. Such backend development skills as MySQL and REST API were also gained for the business requirements."
   },
   {
     "kind": "text",
@@ -73,6 +73,7 @@
           "Git",
           "Docker",
           "Apache Spark",
+          "Playwright",
           "Selenium",
           "Pyramid web framework"
         ]
@@ -103,12 +104,12 @@
     "title": "Portfolio",
     "data": [
       {
-        "link": "https://m.bobbibrowncosmetics.com/products/2326/makeup/eyes#eye-looks",
+        "link": "https://m.maccosmetics.com/trend-try-on",
         "imgSrcs": [
-          "bb-look-finder-try-on.png",
-          "bb-look-finder-how-to.png"
+          "mac-tutorial-look-selection.png",
+          "mac-tutorial-makeup.png"
         ],
-        "caption": "Bobbi Brown Virtual Look Finder"
+        "caption": "Makeup Tutorial for MAC"
       },
       {
         "link": "https://www.perfectcorp.com/business/showcase/live-shows",
