@@ -6,6 +6,9 @@ const styles = {
     paddingTop: "1em",
     display: "flex",
     alignItems: "center",
+    width: "100%",
+    justifyContent: "center",
+    textAlign: "center",
   },
 };
 
