@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.47c4052a.css",
-    "main.js": "./static/js/main.71cb5581.js",
-    "static/js/568.a266b94e.chunk.js": "./static/js/568.a266b94e.chunk.js",
+    "main.js": "./static/js/main.a0112b03.js",
+    "static/js/568.8dd59672.chunk.js": "./static/js/568.8dd59672.chunk.js",
     "static/js/787.f429b844.chunk.js": "./static/js/787.f429b844.chunk.js",
     "static/js/903.2575b818.chunk.js": "./static/js/903.2575b818.chunk.js",
     "static/media/mac-tutorial-look-selection.png": "./static/media/mac-tutorial-look-selection.523e5f5b474afd226cf8.png",
@@ -15,13 +15,13 @@
     "static/media/pf-challenge.png": "./static/media/pf-challenge.cb12e3c87211eb050549.png",
     "index.html": "./index.html",
     "main.47c4052a.css.map": "./static/css/main.47c4052a.css.map",
-    "main.71cb5581.js.map": "./static/js/main.71cb5581.js.map",
-    "568.a266b94e.chunk.js.map": "./static/js/568.a266b94e.chunk.js.map",
+    "main.a0112b03.js.map": "./static/js/main.a0112b03.js.map",
+    "568.8dd59672.chunk.js.map": "./static/js/568.8dd59672.chunk.js.map",
     "787.f429b844.chunk.js.map": "./static/js/787.f429b844.chunk.js.map",
     "903.2575b818.chunk.js.map": "./static/js/903.2575b818.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47c4052a.css",
-    "static/js/main.71cb5581.js"
+    "static/js/main.a0112b03.js"
   ]
 }
